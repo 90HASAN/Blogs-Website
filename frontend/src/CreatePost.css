@@ -1,0 +1,142 @@
+.create-post-both-container {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+.Motivational-message {
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #4b0082;
+    max-height: 100px;
+    background-color: #f7e9ff;
+    border-radius: 12px;
+}
+
+.create-post-container {
+    background-color: #f7e9ff;
+    color: #4b0082;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    min-width: 800px;
+    max-height: 570px;
+  }
+ 
+  .create-post-container h2 {
+    color: #4b0082;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-top: 0px;
+    border-radius: 20px;
+  }
+  
+
+  .create-post-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  .create-post-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4b0082;
+  }
+  
+  .create-post-container input,
+  .create-post-container textarea {
+    width: 97%;
+    border: 2px solid #d1b3ff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #4b0082;
+  }
+
+  .create-post-container input {
+    height: 15px;
+  }
+  
+  .create-post-container textarea {
+    height: 250px;
+    resize: vertical;
+  }
+  
+  .create-post-container button {
+    background-color: #d1b3ff; 
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100px;
+    align-self: flex-end;
+  }
+  
+  .create-post-container button:hover {
+    background-color: #b092e6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .create-post-container p {
+    color: #2e7d32;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 1024px) {
+    .blog-detail-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .blog-content {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    .blog-buttons {
+      margin-left: 0;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .blog-detail-container {
+      padding: 10px;
+      gap: 20px;
+    }
+  
+    .blog-content {
+      padding: 15px;
+      max-width: 100%;
+      min-width: auto;
+    }
+  
+    .blog-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .blog-content p {
+      font-size: 0.9rem;
+    }
+  
+    .blog-buttons button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  

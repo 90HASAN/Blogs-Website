@@ -8,7 +8,7 @@ const Favourite = () => {
   useEffect(() => {
     const fetchFavouriteBlogs = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/favourite-blogs');
+        const response = await axios.get('https://blogs-website-backend-11ek.onrender.com/api/favourite-blogs');
         setFavouriteBlogs(response.data);
       } catch (error) {
         console.error('Error fetching favourite blogs:', error);

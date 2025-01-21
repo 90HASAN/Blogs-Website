@@ -12,7 +12,7 @@ function BlogDetail() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/blogs/${id}`);
+        const response = await fetch(`https://blogs-website-backend-11ek.onrender.com/api/blogs/${id}`);
         const data = await response.json();
         setBlog(data);
       } catch (err) {
@@ -28,7 +28,7 @@ function BlogDetail() {
   const handleDelete = async () => {
 
     try {
-      await axios.delete(`http://localhost:5000/api/blogs/${id}`);
+      await axios.delete(`https://blogs-website-backend-11ek.onrender.com/api/blogs/${id}`);
       navigate("/");
     } catch (err) {
       console.error("Failed to delete blog:", err);

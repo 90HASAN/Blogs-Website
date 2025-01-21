@@ -9,7 +9,7 @@ function Home() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/blogs");
+        const response = await fetch("https://blogs-website-backend-11ek.onrender.com/api/blogs");
         const data = await response.json();
         setBlogs(data);
       } catch (err) {
@@ -23,7 +23,7 @@ function Home() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/blogs");
+        const response = await fetch("https://blogs-website-backend-11ek.onrender.com/api/blogs");
         const data = await response.json();
 
         const likedState = data.reduce((acc, blog) => {

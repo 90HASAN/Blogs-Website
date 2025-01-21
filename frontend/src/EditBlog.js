@@ -12,7 +12,7 @@ function EditBlog() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/blogs/${id}`);
+        const response = await axios.get(`https://blogs-website-backend-11ek.onrender.com/api/blogs/${id}`);
         setTitle(response.data.title);
         setContent(response.data.content);
       } catch (err) {
@@ -28,7 +28,7 @@ function EditBlog() {
     e.preventDefault();
 
     try {
-      await axios.put(`http://localhost:5000/api/blogs/${id}`, { title, content });
+      await axios.put(`https://blogs-website-backend-11ek.onrender.com/api/blogs/${id}`, { title, content });
       navigate(`/`);
     } catch (err) {
       console.error("Failed to update blog:", err);

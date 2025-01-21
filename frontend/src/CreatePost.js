@@ -13,7 +13,7 @@ const CreatePost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/blogs', {
+      const response = await axios.post('https://blogs-website-backend-11ek.onrender.com/api/blogs', {
         title,
         content,
       });
